@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="order-form">
+        <h1 class="title">Order Price Calculator</h1>
+        <p class="sub-title">Calculate total price with tax and discounts(Typesscript Powered)</p>
+
+        <div class="input-group">
+            <label for="item-name">Item Name</label>
+            <input type="text" name="item-name" id="item-name" placeholder="e.g. Laptop">
+        </div>
+
+        <div class="input-group">
+            <label for="item-price">Item Price</label>
+            <input type="number" name="item-price" id="item-price" placeholder="Enter price">
+        </div>
+
+        <div class="input-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" id="quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="input-group">
+            <label for="tax">Tax(%)</label>
+            <input type="number" name="tax" id="tax" placeholder="e.g. 15">
+        </div>
+
+        <div class="input-group">
+            <label for="discount">Discount(%)</label>
+            <input type="number" name="discount" id="discount" placeholder="e.g. 10">
+        </div>
+
+        <button id="calculate-total" type="submit">Calculate Total</button>
+
+        <div class="result-box" id="result-box">
+            <p><strong>Item Name: </strong><span id="itemName"> </span></p>
+            <p><strong>Subtotal: </strong><span id="subtotal"> </span></p>
+            <p><strong>Tax Amount: </strong><span id="tax-amount"> </span></p>
+            <p><strong>Discount Amount: </strong><span id="discount-amount"> </span></p>
+            <hr style="margin-top: 10px;margin-bottom: 10px;">
+            <p class="total"><strong>Total Payable:</strong><span id="total"> </span></p>
+
+        </div>
+
+    </form>
+
+
+
+
+
+
+
+
+
+    <script src="./dist/index.js"></script>
+</body>
+</html>
